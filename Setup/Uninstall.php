@@ -1,7 +1,7 @@
 <?php
-namespace Bold\OrderComment\Setup;
+namespace BezigeBoefjes\OrderComment\Setup;
 
-use Bold\OrderComment\Model\Data\OrderComment;
+use BezigeBoefjes\OrderComment\Model\Data\OrderComment;
 use Magento\Framework\Setup\UninstallInterface;
 use Magento\Framework\Setup\SchemaSetupInterface;
 use Magento\Framework\Setup\ModuleContextInterface;

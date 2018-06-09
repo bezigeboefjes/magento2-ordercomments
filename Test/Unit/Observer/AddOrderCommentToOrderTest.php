@@ -1,9 +1,9 @@
 <?php
-namespace Bold\OrderComment\Test\Unit\Observer;
+namespace BezigeBoefjes\OrderComment\Test\Unit\Observer;
 
-use Bold\OrderComment\Observer\AddOrderCommentToOrder;
+use BezigeBoefjes\OrderComment\Observer\AddOrderCommentToOrder;
 use Magento\Framework\TestFramework\Unit\Helper\ObjectManager;
-use Bold\OrderComment\Model\Data\OrderComment;
+use BezigeBoefjes\OrderComment\Model\Data\OrderComment;
 
 class AddOrderCommentToOrderTest extends \PHPUnit_Framework_TestCase
 {

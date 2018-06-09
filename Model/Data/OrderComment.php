@@ -1,12 +1,12 @@
 <?php
-namespace Bold\OrderComment\Model\Data;
+namespace BezigeBoefjes\OrderComment\Model\Data;
 
-use Bold\OrderComment\Api\Data\OrderCommentInterface;
+use BezigeBoefjes\OrderComment\Api\Data\OrderCommentInterface;
 use Magento\Framework\Api\AbstractSimpleObject;
 
 class OrderComment extends AbstractSimpleObject implements OrderCommentInterface
 {
-    const COMMENT_FIELD_NAME = 'bold_order_comment';
+    const COMMENT_FIELD_NAME = 'BezigeBoefjes_order_comment';
     
     /**
      * @return string|null

@@ -9,8 +9,8 @@
   "license": "MIT",
   "authors": [
     {
-      "name": "Bold Commerce BV",
-      "email": "info@boldcommerce.nl"
+      "name": "BezigeBoefjes",
+      "email": "info@BezigeBoefjescommerce.nl"
     }
   ],
   "autoload": {
@@ -18,7 +18,7 @@
       "registration.php"
     ],
     "psr-4": {
-      "Bezigeboefjes\\OrderComment\\": ""
+      "BezigeBoefjes\\OrderComment\\": ""
     }
   }
 }

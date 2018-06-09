@@ -9,7 +9,7 @@ define(
 
         return Component.extend({
             defaults: {
-                template: 'Bold_OrderComment/checkout/order-comment-block'
+                template: 'BezigeBoefjes_OrderComment/checkout/order-comment-block'
             },
             initialize: function() {
                 this._super();

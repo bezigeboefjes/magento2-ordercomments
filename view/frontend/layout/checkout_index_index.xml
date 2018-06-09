@@ -16,7 +16,7 @@
                                                         <item name="additional-payment-validators" xsi:type="array">
                                                             <item name="children" xsi:type="array">
                                                                 <item name="order-comment-validator" xsi:type="array">
-                                                                    <item name="component" xsi:type="string">Bold_OrderComment/js/view/checkout/order-comment-validator</item>
+                                                                    <item name="component" xsi:type="string">BezigeBoefjes_OrderComment/js/view/checkout/order-comment-validator</item>
                                                                 </item>
                                                             </item>
                                                         </item>
@@ -25,7 +25,7 @@
                                                                 <item name="before-place-order" xsi:type="array">
                                                                     <item name="children" xsi:type="array">
                                                                         <item name="comment" xsi:type="array">
-                                                                            <item name="component" xsi:type="string">Bold_OrderComment/js/view/checkout/order-comment-block</item>
+                                                                            <item name="component" xsi:type="string">BezigeBoefjes_OrderComment/js/view/checkout/order-comment-block</item>
                                                                         </item>
                                                                     </item>
                                                                 </item>

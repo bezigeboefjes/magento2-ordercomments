@@ -1,13 +1,13 @@
 <?php
-namespace Bold\OrderComment\Model;
+namespace BezigeBoefjes\OrderComment\Model;
 
-use Bold\OrderComment\Model\Data\OrderComment;
+use BezigeBoefjes\OrderComment\Model\Data\OrderComment;
 use Magento\Framework\App\Config\ScopeConfigInterface;
 use Magento\Framework\Exception\NoSuchEntityException;
 use Magento\Framework\Exception\CouldNotSaveException;
 use Magento\Framework\Exception\ValidatorException;
 
-class OrderCommentManagement implements \Bold\OrderComment\Api\OrderCommentManagementInterface
+class OrderCommentManagement implements \BezigeBoefjes\OrderComment\Api\OrderCommentManagementInterface
 {
     /**
      * Quote repository.
@@ -35,14 +35,14 @@ class OrderCommentManagement implements \Bold\OrderComment\Api\OrderCommentManag
 
     /**
      * @param int $cartId
-     * @param \Bold\OrderComment\Api\Data\OrderCommentInterface $orderComment
+     * @param \BezigeBoefjes\OrderComment\Api\Data\OrderCommentInterface $orderComment
      * @return null|string
      * @throws CouldNotSaveException
      * @throws NoSuchEntityException
      */
     public function saveOrderComment(
         $cartId,
-        \Bold\OrderComment\Api\Data\OrderCommentInterface $orderComment
+        \BezigeBoefjes\OrderComment\Api\Data\OrderCommentInterface $orderComment
     ) {
         $quote = $this->quoteRepository->getActive($cartId);
         if (!$quote->getItemsCount()) {

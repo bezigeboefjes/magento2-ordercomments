@@ -1,9 +1,9 @@
 <?php
-namespace Bold\OrderComment\Model;
+namespace BezigeBoefjes\OrderComment\Model;
 
 use Magento\Quote\Model\QuoteIdMaskFactory;
 
-class GuestOrderCommentManagement implements \Bold\OrderComment\Api\GuestOrderCommentManagementInterface
+class GuestOrderCommentManagement implements \BezigeBoefjes\OrderComment\Api\GuestOrderCommentManagementInterface
 {
 
     /**
@@ -12,18 +12,18 @@ class GuestOrderCommentManagement implements \Bold\OrderComment\Api\GuestOrderCo
     protected $quoteIdMaskFactory;
 
     /**
-     * @var \Bold\OrderComment\Api\OrderCommentManagementInterface
+     * @var \BezigeBoefjes\OrderComment\Api\OrderCommentManagementInterface
      */
     protected $orderCommentManagement;
     
     /**
      * GuestOrderCommentManagement constructor.
      * @param QuoteIdMaskFactory $quoteIdMaskFactory
-     * @param \Bold\OrderComment\Api\OrderCommentManagementInterface $orderCommentManagement
+     * @param \BezigeBoefjes\OrderComment\Api\OrderCommentManagementInterface $orderCommentManagement
      */
     public function __construct(
         QuoteIdMaskFactory $quoteIdMaskFactory,
-        \Bold\OrderComment\Api\OrderCommentManagementInterface $orderCommentManagement
+        \BezigeBoefjes\OrderComment\Api\OrderCommentManagementInterface $orderCommentManagement
     ) {
         $this->quoteIdMaskFactory = $quoteIdMaskFactory;
         $this->orderCommentManagement = $orderCommentManagement;
@@ -34,7 +34,7 @@ class GuestOrderCommentManagement implements \Bold\OrderComment\Api\GuestOrderCo
      */
     public function saveOrderComment(
         $cartId,
-        \Bold\OrderComment\Api\Data\OrderCommentInterface $orderComment
+        \BezigeBoefjes\OrderComment\Api\Data\OrderCommentInterface $orderComment
     ) {
         $quoteIdMask = $this->quoteIdMaskFactory->create()->load($cartId, 'masked_id');
         return $this->orderCommentManagement->saveOrderComment($quoteIdMask->getQuoteId(), $orderComment);

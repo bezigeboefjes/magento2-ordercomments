@@ -1,6 +1,6 @@
 <?php
 
-namespace Bold\OrderComment\Model;
+namespace BezigeBoefjes\OrderComment\Model;
 
 use Magento\Checkout\Model\ConfigProviderInterface;
 use Magento\Framework\App\Config\ScopeConfigInterface;

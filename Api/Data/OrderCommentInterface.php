@@ -1,5 +1,5 @@
 <?php
-namespace Bold\OrderComment\Api\Data;
+namespace BezigeBoefjes\OrderComment\Api\Data;
 
 interface OrderCommentInterface
 {

@@ -1,12 +1,12 @@
 <?php
-namespace Bold\OrderComment\Test\Integration\Model;
+namespace BezigeBoefjes\OrderComment\Test\Integration\Model;
 
-use Bold\OrderComment\Model\Data\OrderComment;
+use BezigeBoefjes\OrderComment\Model\Data\OrderComment;
 use Magento\TestFramework\Helper\Bootstrap;
 
 /**
  * Class GuestOrderCommentManagementTest
- * @package Bold\OrderComment\Test\Integration\Model
+ * @package BezigeBoefjes\OrderComment\Test\Integration\Model
  *
  * @magentoDbIsolation enabled
  */
@@ -30,9 +30,9 @@ class GuestOrderCommentManagementTest extends \PHPUnit_Framework_TestCase
         $quoteMask = $objectManager->create('\Magento\Quote\Model\QuoteIdMask');
         $quoteMask->load($quote->getId(), 'quote_id');
         
-        $model = $objectManager->create('\Bold\OrderComment\Api\GuestOrderCommentManagementInterface');
+        $model = $objectManager->create('\BezigeBoefjes\OrderComment\Api\GuestOrderCommentManagementInterface');
 
-        $data = $objectManager->create('\Bold\OrderComment\Api\Data\OrderCommentInterface');
+        $data = $objectManager->create('\BezigeBoefjes\OrderComment\Api\Data\OrderCommentInterface');
 
         $data->setComment($comment);
 

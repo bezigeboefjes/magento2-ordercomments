@@ -1,8 +1,8 @@
 <?php
 
-namespace Bold\OrderComment\Block\Order;
+namespace BezigeBoefjes\OrderComment\Block\Order;
 
-use Bold\OrderComment\Model\Data\OrderComment;
+use BezigeBoefjes\OrderComment\Model\Data\OrderComment;
 use Magento\Framework\Registry;
 use Magento\Framework\View\Element\Template\Context as TemplateContext;
 use Magento\Sales\Model\Order;

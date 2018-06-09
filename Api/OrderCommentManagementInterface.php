@@ -1,5 +1,5 @@
 <?php
-namespace Bold\OrderComment\Api;
+namespace BezigeBoefjes\OrderComment\Api;
 
 /**
  * Interface for saving the checkout comment to the quote for orders of logged in users
@@ -9,11 +9,11 @@ interface OrderCommentManagementInterface
 {
     /**
      * @param int $cartId
-     * @param \Bold\OrderComment\Api\Data\OrderCommentInterface $orderComment
+     * @param \BezigeBoefjes\OrderComment\Api\Data\OrderCommentInterface $orderComment
      * @return string
      */
     public function saveOrderComment(
         $cartId,
-        \Bold\OrderComment\Api\Data\OrderCommentInterface $orderComment
+        \BezigeBoefjes\OrderComment\Api\Data\OrderCommentInterface $orderComment
     );
 }

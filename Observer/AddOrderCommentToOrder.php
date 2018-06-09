@@ -1,7 +1,7 @@
 <?php
-namespace Bold\OrderComment\Observer;
+namespace BezigeBoefjes\OrderComment\Observer;
 
-use Bold\OrderComment\Model\Data\OrderComment;
+use BezigeBoefjes\OrderComment\Model\Data\OrderComment;
 
 class AddOrderCommentToOrder implements \Magento\Framework\Event\ObserverInterface
 {

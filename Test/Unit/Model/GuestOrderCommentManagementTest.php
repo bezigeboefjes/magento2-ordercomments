@@ -1,12 +1,12 @@
 <?php
-namespace Bold\OrderComment\Test\Unit\Model;
+namespace BezigeBoefjes\OrderComment\Test\Unit\Model;
 
 use Magento\Quote\Test\Unit\Model\GuestCart\GuestCartTestHelper;
 
 class GuestOrderCommentManagementTest extends \PHPUnit_Framework_TestCase
 {
     /**
-     * @var \Bold\OrderComment\Model\GuestOrderCommentManagement
+     * @var \BezigeBoefjes\OrderComment\Model\GuestOrderCommentManagement
      */
     protected $testObject;
 
@@ -64,7 +64,7 @@ class GuestOrderCommentManagementTest extends \PHPUnit_Framework_TestCase
         );
         
         $this->orderCommentManagementMock = $this->getMock(
-            'Bold\OrderComment\Model\OrderCommentManagement',
+            'BezigeBoefjes\OrderComment\Model\OrderCommentManagement',
             [],
             [],
             '',
@@ -81,7 +81,7 @@ class GuestOrderCommentManagementTest extends \PHPUnit_Framework_TestCase
         );
 
         $this->testObject = $objectManager->getObject(
-            'Bold\OrderComment\Model\GuestOrderCommentManagement',
+            'BezigeBoefjes\OrderComment\Model\GuestOrderCommentManagement',
             [
                 'orderCommentManagement' => $this->orderCommentManagementMock,
                 'quoteIdMaskFactory' => $this->quoteIdMaskFactoryMock
@@ -93,7 +93,7 @@ class GuestOrderCommentManagementTest extends \PHPUnit_Framework_TestCase
     {
         $comment = 'test comment';
 
-        $orderCommentMock = $this->getMockBuilder('\Bold\OrderComment\Model\Data\OrderComment')
+        $orderCommentMock = $this->getMockBuilder('\BezigeBoefjes\OrderComment\Model\Data\OrderComment')
             ->disableOriginalConstructor()
             ->getMock();
         

@@ -1,12 +1,12 @@
 <?php
-namespace Bold\OrderComment\Test\Integration\Observer;
+namespace BezigeBoefjes\OrderComment\Test\Integration\Observer;
 
-use Bold\OrderComment\Model\Data\OrderComment;
+use BezigeBoefjes\OrderComment\Model\Data\OrderComment;
 use Magento\TestFramework\Helper\Bootstrap;
 
 /**
  * Class AddOrderCommentToOrderTest
- * @package Bold\OrderComment\Test\Integration\Observer
+ * @package BezigeBoefjes\OrderComment\Test\Integration\Observer
  *
  * tests if the comment gets passed from the quote to the order during order creation.
  * @magentoDbIsolation enabled

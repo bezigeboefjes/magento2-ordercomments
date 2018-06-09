@@ -1,4 +1,4 @@
-# Bold Commerce: Magento 2 Order Comments
+# BezigeBoefjes Commerce: Magento 2 Order Comments
 
 ## Description
 This extension allows customers to place a comment during the checkout.
@@ -17,30 +17,30 @@ Store owners can then see these comments in the backend on the order grid and on
 
 ## Installation
 ```
-composer require "boldcommerce/magento2-ordercomments":"~1.1.3"
-php bin/magento module:enable Bold_OrderComment
+composer require "BezigeBoefjescommerce/magento2-ordercomments":"~1.1.3"
+php bin/magento module:enable BezigeBoefjes_OrderComment
 php bin/magento setup:upgrade
 ```
 
 ## Changelog
 1.1.3
 =============
-* Dutch translations [#10](https://github.com/boldcommerce/magento2-ordercomments/pull/10)
-* Italian translations [#11](https://github.com/boldcommerce/magento2-ordercomments/pull/11)
+* Dutch translations [#10](https://github.com/BezigeBoefjescommerce/magento2-ordercomments/pull/10)
+* Italian translations [#11](https://github.com/BezigeBoefjescommerce/magento2-ordercomments/pull/11)
 
 1.1.2
 =============
-* Fix for fatal error on admin order view page when used with some other extensions [#9](https://github.com/boldcommerce/magento2-ordercomments/issues/9)
+* Fix for fatal error on admin order view page when used with some other extensions [#9](https://github.com/BezigeBoefjescommerce/magento2-ordercomments/issues/9)
 
 1.1.1
 =============
-* Swedish translations and fixes in German translations [#5](https://github.com/boldcommerce/magento2-ordercomments/pull/5)
+* Swedish translations and fixes in German translations [#5](https://github.com/BezigeBoefjescommerce/magento2-ordercomments/pull/5)
 
 1.1.0
 =============
-* German translations [#2](https://github.com/boldcommerce/magento2-ordercomments/pull/2)
-* Optional configuration for maximum comment length [#3](https://github.com/boldcommerce/magento2-ordercomments/pull/3)
-* Show order comments in customer account [#4](https://github.com/boldcommerce/magento2-ordercomments/pull/4)
+* German translations [#2](https://github.com/BezigeBoefjescommerce/magento2-ordercomments/pull/2)
+* Optional configuration for maximum comment length [#3](https://github.com/BezigeBoefjescommerce/magento2-ordercomments/pull/3)
+* Show order comments in customer account [#4](https://github.com/BezigeBoefjescommerce/magento2-ordercomments/pull/4)
 
 1.0.0
 =============
@@ -55,7 +55,7 @@ the box.
 
 
 ## Uninstall
-If you installed this module through composer, then you can run `php bin/magento module:uninstall Bold_OrderComment` to automatically
+If you installed this module through composer, then you can run `php bin/magento module:uninstall BezigeBoefjes_OrderComment` to automatically
 remove the code and drop the columns added by this extension.
 
 *note:* the uninstall command seems bugged and might get stuck at `Removing code from Magento codebase:` (It worked fine for me on a 2.1.0 install but not on a 2.1.4 install). When this happens you should
@@ -66,7 +66,7 @@ php bin/magento maintenance:disable
 ```
 See [github issue 3544](https://github.com/magento/magento2/issues/3544)
 
-Alternatively you can manually remove the extension and remove the column `bold_order_comment` from the tables
+Alternatively you can manually remove the extension and remove the column `BezigeBoefjes_order_comment` from the tables
 * quote
 * sales_order
 * sales_order_grid

@@ -1,7 +1,7 @@
 <?php
-namespace Bold\OrderComment\Plugin\Block\Adminhtml;
+namespace BezigeBoefjes\OrderComment\Plugin\Block\Adminhtml;
 
-use Bold\OrderComment\Model\Data\OrderComment;
+use BezigeBoefjes\OrderComment\Model\Data\OrderComment;
 
 class SalesOrderViewInfo
 {

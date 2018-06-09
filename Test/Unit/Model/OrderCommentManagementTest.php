@@ -1,10 +1,10 @@
 <?php
-namespace Bold\OrderComment\Test\Unit\Model;
+namespace BezigeBoefjes\OrderComment\Test\Unit\Model;
 
-use Bold\OrderComment\Api\Data\OrderCommentInterface;
-use Bold\OrderComment\Model\Data\OrderComment;
-use Bold\OrderComment\Model\OrderCommentConfigProvider;
-use Bold\OrderComment\Model\OrderCommentManagement;
+use BezigeBoefjes\OrderComment\Api\Data\OrderCommentInterface;
+use BezigeBoefjes\OrderComment\Model\Data\OrderComment;
+use BezigeBoefjes\OrderComment\Model\OrderCommentConfigProvider;
+use BezigeBoefjes\OrderComment\Model\OrderCommentManagement;
 use Magento\Framework\App\Config\ScopeConfigInterface;
 use Magento\Quote\Api\CartRepositoryInterface;
 use Magento\Quote\Model\Quote;

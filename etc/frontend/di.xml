@@ -3,7 +3,7 @@
     <type name="Magento\Checkout\Model\CompositeConfigProvider">
         <arguments>
             <argument name="configProviders" xsi:type="array">
-                <item name="ordercomments_config_provider" xsi:type="object">Bold\OrderComment\Model\OrderCommentConfigProvider</item>
+                <item name="ordercomments_config_provider" xsi:type="object">BezigeBoefjes\OrderComment\Model\OrderCommentConfigProvider</item>
             </argument>
         </arguments>
     </type>

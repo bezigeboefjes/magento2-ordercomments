@@ -3,7 +3,7 @@
 
     <!-- Managing checkout comment -->
     <route url="/V1/guest-carts/:cartId/set-order-comment" method="PUT">
-        <service class="Bold\OrderComment\Api\GuestOrderCommentManagementInterface" method="saveOrderComment"/>
+        <service class="BezigeBoefjes\OrderComment\Api\GuestOrderCommentManagementInterface" method="saveOrderComment"/>
         <resources>
             <resource ref="anonymous" />
         </resources>
@@ -11,7 +11,7 @@
 
     <!-- Managing checkout comment -->
     <route url="/V1/carts/mine/set-order-comment" method="PUT">
-        <service class="Bold\OrderComment\Api\OrderCommentManagementInterface" method="saveOrderComment"/>
+        <service class="BezigeBoefjes\OrderComment\Api\OrderCommentManagementInterface" method="saveOrderComment"/>
         <resources>
             <resource ref="self" />
         </resources>

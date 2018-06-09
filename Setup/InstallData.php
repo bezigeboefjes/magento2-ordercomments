@@ -1,6 +1,6 @@
 <?php
 
-namespace Bold\OrderComment\Setup;
+namespace BezigeBoefjes\OrderComment\Setup;
 
 use Magento\Framework\Setup\InstallDataInterface;
 use Magento\Framework\Setup\ModuleContextInterface;
@@ -50,13 +50,13 @@ class InstallData implements InstallDataInterface
         
         $quoteInstaller->addAttribute(
             'quote',
-            'bold_order_comment',
+            'BezigeBoefjes_order_comment',
             ['type' => Table::TYPE_TEXT, 'length' => '64k', 'nullable' => true]
         );
 
         $salesInstaller->addAttribute(
             'order',
-            'bold_order_comment',
+            'BezigeBoefjes_order_comment',
             ['type' => Table::TYPE_TEXT, 'length' => '64k', 'nullable' => true, 'grid' => true]
         );
 
